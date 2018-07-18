@@ -48,7 +48,11 @@ body {
     color: hotpink;
 }
 
-
+.vercenter{
+   display: flex;
+  justify-content: center;
+  align-items: center; 
+}
 .fafa {
   display: inline-block;
   border-radius: 60px;
