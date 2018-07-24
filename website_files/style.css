@@ -38,6 +38,92 @@ body {
     color: red;
 }
 
+
+
+.project-tile{
+    padding: 1px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    display:inline-block;
+    border:0;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+    cursor: pointer;
+
+}
+
+.project-tile:hover {
+ 
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.45);
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+
+.project-tile:hover > .tile-text{
+    display: none;
+}
+
+.project-tile:hover > .tile-text-hover{
+    display: block;
+}
+
+
+.tile-text{
+
+  padding: 10px;
+    position: absolute;
+    z-index: 4;
+    color: #eee;
+    width: 100%;
+    top: 30%;
+    pointer-events: none;
+}
+.tile-text-hover{
+  padding: 10px;
+    position: absolute;
+    z-index: 4;
+    color: #eee;
+    width: 100%;
+    top: 20%;
+    pointer-events: none;
+    display: none;
+    font-size: 20px;
+}
+.tile-overlay{
+
+    cursor: pointer;
+    margin: 1px;
+    position: absolute; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    
+    background: radial-gradient(rgba(52,73,94,0.9),rgba(36,50,67,0.9),rgba(0,0,0,0.9));
+    opacity: 0.8; /* Black background with opacity */
+    z-index: 3; /* Add a pointer on hover */
+}
+.hidden{
+    display: none;
+}
+
+
+
 /* visited link */
 .pinky:visited {
     color: red;
@@ -76,8 +162,19 @@ p {
   color: #7e7e7e;
 }
 
+.section-sub-head {
+  color: #333333;
+  margin-bottom: 10px;
+  left: 3%;
+  font-weight: 800;
+  font-size: 25px;
+  margin-top: 30px;
+  text-align: left;
+  position: relative;
+}
+
 .section-head {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   padding-bottom: 20px;
   text-align: center;
   position: relative;
