@@ -30,7 +30,7 @@ Version: 1.0
 -------------------------------------------------------- */
 @import url(main.css);
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Muli', sans-serif;
   color: #2C3E50;
   font-weight: 400;
 }
@@ -41,18 +41,18 @@ body {
 
 
 .project-tile{
+    display: flex;
+    justify-content: center;
     padding: 1px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    display:inline-block;
     border:0;
     position: relative;
-    -webkit-transition: all 200ms ease-in;
+    -webkit-transition: all 100ms ease-in;
     -webkit-transform: scale(1); 
-    -ms-transition: all 200ms ease-in;
+    -ms-transition: all 100ms ease-in;
     -ms-transform: scale(1); 
-    -moz-transition: all 200ms ease-in;
+    -moz-transition: all 100ms ease-in;
     -moz-transform: scale(1);
-    transition: all 200ms ease-in;
+    transition: all 100ms ease-in;
     transform: scale(1); 
     cursor: pointer;
 
@@ -60,16 +60,15 @@ body {
 
 .project-tile:hover {
  
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.45);
     z-index: 2;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.1);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.1);   
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.1);
-    transition: all 200ms ease-in;
-    transform: scale(1.1);
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 100ms ease-in;
+    transform: scale(1.05);
 }
 
 .project-tile:hover > .tile-text{
@@ -79,6 +78,44 @@ body {
 .project-tile:hover > .tile-text-hover{
     display: block;
 }
+
+.tile{
+  width: 90%;
+  height: 100%;
+}
+
+.project-image{
+
+}
+.project-description{
+    text-align: justify;
+}
+
+
+
+
+.buttx{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.butty{
+
+    font-family: 'Josefin Sans';
+    position: absolute;
+    top: 25px;
+    left: 45px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sec-heading{
+    font-size: 60px;
+    margin-top: 50px;
+}
+
 
 
 .tile-text{
@@ -92,15 +129,27 @@ body {
     pointer-events: none;
 }
 .tile-text-hover{
-  padding: 10px;
+  background: #eee;
+  height: 100%;
+  font-family: 'Josefin Sans';
+  padding: 30px;
+  padding-top: 50px;
     position: absolute;
     z-index: 4;
-    color: #eee;
+    color: black;
     width: 100%;
-    top: 20%;
+    opacity: 0.9;
     pointer-events: none;
     display: none;
-    font-size: 20px;
+    
+}
+.name{
+  font-size: 20px;
+    font-weight: 600;
+}
+.subname{
+  font-size: 17px;
+    font-weight: 300;
 }
 .tile-overlay{
 
@@ -166,15 +215,14 @@ p {
   color: #333333;
   margin-bottom: 10px;
   left: 3%;
-  font-weight: 800;
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 30px;
   text-align: left;
   position: relative;
 }
 
 .section-head {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding-bottom: 20px;
   text-align: center;
   position: relative;
