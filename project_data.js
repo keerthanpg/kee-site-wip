@@ -1,4 +1,4 @@
-var data= [
+var data = [
 	{
 		'id' : 'academic',
 		'section_name' : 'Tech Projects',
@@ -45,19 +45,12 @@ var data= [
 			'id' : 'P1',
 			'name' : 'Disha Seema School',
 			'image' : 'img/projects/dishaseema.jpg',
-			'timeline': '2015-17'
+			'timeline': '2015-17',
 			'subhead' : 'Founded volunteer organisation for Disha Seema School',
 			'description' : "Worked as a Sunday teacher for Disha Seema School at IIT Kharagpur that housed about 300 students from underprivileged sections of Jharkhand, Bihar and West Bengal teaching kids about robotics & personal hygiene through hands-on sessions and supervising homework hours. Successfully ran a campaign install a water purifier. Ran another campaign to raise funds for necessary equipments at school. Recruited juniors and fellow students to tutor the children. <br><br> <code>#chrome-extension #d3.js #javascript #html #css </code>",
 			'donateLink' : 'https://dishaseemaschool.github.io/be-their-genie/',
 			'pageLink' : 'https://www.facebook.com/dishaseemacentre/',
 		}, {
-			'id' : 'P2',
-			'name' : 'Campus Journalism',
-			'image' : 'img/projects/mme.jpg',
-			'subhead' : 'Exceutive Editor of Campus Newspaper',
-            'description' : "Served for five years, in various capacities starting from Junior Reporter to Executive Editor at the Scholars' Avenue, the student-run campus newspaper of IIT Kharagpur. Major responsibilities included reporting and organising reporting on campus issues and happenings including elections, managing sponsorship and advertisement, overseeing recruitment and training of younger journalists, conducting interviews and collaborating with pan -IIT newsbodies.<br><br> <code>#python #d3.js #javascript #html #css </code>",
-			'websiteLink' : 'https://web.scholarsavenue.org/',
-		},{
 			'id' : 'P2',
 			'name' : 'Campus Journalism',
 			'image' : 'img/projects/mme.jpg',
