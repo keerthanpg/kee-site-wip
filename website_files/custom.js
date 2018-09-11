@@ -69,20 +69,13 @@ $(function() {
         $(".modal-sub-title").html(projectObj.subhead);
         $(".project-img").attr("src",projectObj.image);
         $(".project-description").html(projectObj.description);
-        if (projectObj.demoLink=='#'){
-            $("#demo").addClass("disabled");    
-        }
-        else{
-            $("#demo").removeClass("disabled");    
-            $("#demo").attr("onclick","window.open('"+projectObj.demoLink+"');");
-        }
-        if (projectObj.codeLink=='#'){
-            $("#code").addClass("disabled");    
-        }
-        else{
-            $("#code").removeClass("disabled");  
-            $("#code").attr("onclick","window.open('"+projectObj.codeLink+"');");
-        }
+        var links = projectObj.links;
+        $("#button-home").empty();
+        links.map(function(e){
+            $("#button-home").append('<button type="button" class="btn btn-default butto" onclick=window.open("'+e[1]+'")>'+e[0]+'</button>');
+
+        ;
+        });
     });
 
 

@@ -38,6 +38,18 @@ body {
     color: red;
 }
 
+.img-responsive{
+  margin-right: 10px;
+}
+
+.modal-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-footer{
+  margin-top: 10px;
+}
 
 
 .project-tile{
@@ -55,6 +67,7 @@ body {
     transition: all 100ms ease-in;
     transform: scale(1); 
     cursor: pointer;
+    margin-top: 20px;
 
 }
 
@@ -198,6 +211,7 @@ body {
 }
 .section-padding {
   padding: 100px 0;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
